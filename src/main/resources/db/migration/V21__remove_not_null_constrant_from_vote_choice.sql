@@ -1,0 +1,2 @@
+ALTER TABLE `vote`
+  CHANGE COLUMN `choice` `choice` VARCHAR(256) NULL

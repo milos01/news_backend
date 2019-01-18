@@ -1,0 +1,1 @@
+ALTER TABLE notification CHANGE `users` `r_users` LONGTEXT;

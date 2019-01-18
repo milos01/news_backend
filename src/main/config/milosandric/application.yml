@@ -1,0 +1,54 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/7bnew?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: 7bnew
+    password: andric01
+    driver-class-name: com.mysql.jdbc.Driver
+  old-datasource:
+    url: jdbc:mysql://localhost:3306/sbdb?useUnicode=true&characterEncoding=utf8&useSSL=false
+    username: root
+    password: root
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+flyway:
+  check-location: false
+  locations: classpath:db/migration
+
+spring.jpa:
+  properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+  hibernate.ddl-auto: update
+
+server:
+  port: 8080
+
+custom:
+  mail:
+    from: support@portier.com
+    host: localhost
+    port: 587
+    username:
+    password:
+    starttls: true
+    auth: false
+  url: localhost
+  bucket:
+    name: 7b-dev-storage
+  storagefolder: /Users/lazarpantovic/Desktop/SevenBillionFiles
+  cookiedomain: localhost
+  baseurl: http://localhost:8080
+  imageHandlerUrl: https://7b-image-upload-develop-dot-airy-ceremony-120713.appspot.com/upload
+  frontendbaseurl: http://localhost:8080/
+  servedimagedomain: lh3.googleusercontent.com
+  frontendcreateprofile: create-profile-from-social
+  frontendcreateprofilewithcode: create-profile?code=
+  frontendchangepasswordwithcode: change-password?code=
+  videoplaceholderimage: https://develop.sevenbilliontoday.com/mail-storage/video-default.png
+  placeholderimage: https://develop.sevenbilliontoday.com/mail-storage/mail-template.png
+  twitter:
+    key: 2E6b1CqJTM6LTEIY4LA5caF7A
+    secret: 5GSe5MUKhp2fffpDnv9ywD7XSRvY8rRLc2Mrk0KPigspSbpm0B
+    redirecturl: /authentication/sign-in-twitter
+    profileName: stagod
+  facebook:
+    appId: 123123123123123

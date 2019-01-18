@@ -1,0 +1,2 @@
+ALTER TABLE `notification`
+  ADD COLUMN `r_content_headline` VARCHAR(256) NULL DEFAULT NULL AFTER `users`

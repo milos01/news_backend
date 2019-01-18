@@ -1,0 +1,2 @@
+ALTER TABLE `user`
+  ADD COLUMN `r_tags` VARCHAR(512) NULL DEFAULT NULL AFTER `is_deleted`

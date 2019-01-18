@@ -1,0 +1,2 @@
+ALTER TABLE `comment`
+  CHANGE COLUMN `text` `text` LONGTEXT NULL DEFAULT NULL;
